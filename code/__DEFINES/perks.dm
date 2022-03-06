@@ -1,6 +1,6 @@
 //fate perks
 #define PERK_PAPER_WORM /datum/perk/fate/paper_worm
-#define PERK_FREELACER /datum/perk/fate/freelancer
+#define PERK_JOAT /datum/perk/fate/joat
 #define PERK_NIHILIST /datum/perk/fate/nihilist
 #define PERK_MORALIST /datum/perk/fate/moralist
 #define PERK_ALCOHOLIC /datum/perk/fate/alcoholic

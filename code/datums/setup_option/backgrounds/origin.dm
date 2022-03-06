@@ -6,63 +6,51 @@
 
 /datum/category_item/setup_option/background/origin
 
-/datum/category_item/setup_option/background/origin/oberth
-	name = "Oberth"
-	desc = "An independent colony founded by German immigrants from old Earth and consisting of one giant hive city on a barren desert planet. \
-			It was once one of the most promising of colonies, back when the terraforming process had just begun; a group of scientists gathered together to forge a brighter future. \
-			Now, after a stalemated civil war, Oberth has degenerated into an anarcho-capitalist hell ruled by three governments, all unable to establish control over the city or stop ravaging band wars. \
-			Even Hanza and NeoTheology failed to bring order. Though still a place of infinite possibilities, most of them are illegal. \
-			Gives you knowledge of the German language."
-
+/datum/category_item/setup_option/background/origin/chinese_sub
+	name = "Chinese Remenant"
+	desc = "The People's Republic of China maintained a heavy submarine presence in the Pacific, even in the closing days of the Great War. \
+	One such submarine survived the nuclear exchange, and managed to reach a small settlement formed from a ruined vault near the pre-war town of Valdez. \
+	The submarine remains operational, despite rarely leaving port, and most descendants of the crew are taught some basic skills regarding to crewing it. \
+	Gives you knowledge of the Chinese language."
 	stat_modifiers = list(
-		STAT_ROB = 6,
-		STAT_TGH = -5,
-		STAT_BIO = 0,
-		STAT_MEC = 6,
-		STAT_VIG = 6,
-		STAT_COG = -8
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_BIO = -5,
+		STAT_MEC = 5,
+		STAT_VIG = 3,
+		STAT_COG = -3
 	)
 
-/datum/category_item/setup_option/background/origin/oberth/apply(mob/living/carbon/human/character)
+/datum/category_item/setup_option/background/origin/chinese_sub/apply(mob/living/carbon/human/character)
   ..()
-  character.add_language(LANGUAGE_GERMAN)
+  character.add_language(LANGUAGE_CHINESE)
 
 
-/datum/category_item/setup_option/background/origin/predstraza
-	name = "Predstraza"
-	desc = "The product of a widely held idea back on Earth that if one were to bring all of the Balkan populations on one colony ship, they would be forced to put aside their differences and work together to survive. \
-			Unfortunately, that idea failed miserably and is still failing. \
-			A jungle death world, full of hostile fauna and mired in endless armed conflict. \
-			The Serbian government occupied all of Predstraza's space ports and controls most of the civilized regions. \
-			Located far from Hanza or NT territories, it's a place favored for business by pirates, smugglers and all manner of outlaw. \
-			Gives you knowledge of the Serbian language."
+/datum/category_item/setup_option/background/origin/placeholdervaulttown
+	name = "placeholdervaulttown"
+	desc = "A small town formed out of remenants of a deteriorating vault. Malfunctioning hydroponics and water purification forced the residents to open the vault and expand to the surface. \
+	While quite remote, the town is quite prosperous, bolstered by its strong production capabilities. \
+	It typically trades arms and ammunition to the local tribes and river caravans, and buys technologies from prospectors in the area."
+	stat_modifiers = list(
+		STAT_ROB = 2,
+		STAT_TGH = 6,
+		STAT_BIO = -6,
+		STAT_MEC = 0,
+		STAT_VIG = 0,
+		STAT_COG = -2
+	)
 
+
+/datum/category_item/setup_option/background/origin/tribal
+	name = "Tribal"
+	desc = "A few tribal groups thrive in the area- hunting, fishing, foraging and selling their catch for technology and supplies. "
 	stat_modifiers = list(
 		STAT_ROB = 10,
 		STAT_TGH = 10,
-		STAT_BIO = 0,
-		STAT_MEC = -10,
-		STAT_VIG = 5,
+		STAT_BIO = -5,
+		STAT_MEC = -5,
+		STAT_VIG = 0,
 		STAT_COG = -10
-	)
-
-/datum/category_item/setup_option/background/origin/predstraza/apply(mob/living/carbon/human/character)
-  ..()
-  character.add_language(LANGUAGE_SERBIAN)
-
-/datum/category_item/setup_option/background/origin/sich_prime
-	name = "Sich Prime"
-	desc = "A Ukrainian colony that was a major industrial center during the Corporation Wars, during which they made the fatal mistake of siding with Nanotrasen. \
-			Bombed and poisoned, this planet suffered the harshest toll of the war, both from population loss and ecological devastation. \
-			While ostensibly under the direct control of Hanza, its local military is extremely disloyal and known to support the Founders - a revanchist international group that seeks the return of planetary government's national control over space."
-
-	stat_modifiers = list(
-		STAT_ROB = 5,
-		STAT_TGH = -5,
-		STAT_BIO = 10,
-		STAT_MEC = 5,
-		STAT_VIG = -5,
-		STAT_COG = -5
 	)
 
 

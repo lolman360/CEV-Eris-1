@@ -14,8 +14,8 @@
 		holder.sanity.positive_prob -= 20
 	..()
 
-/datum/perk/fate/freelancer
-	name = "Freelancer"
+/datum/perk/fate/joat
+	name = "Jack of All Trades"
 	icon_state = "skills"
 	desc = "Whatever was your job, you never stayed in one place for too long or had lasting contracts. \
 			This perk checks your highest stat, lowers it by 10 and improves all others by 4."
