@@ -101,7 +101,7 @@
 	min_cold_protection_temperature = T0C - 20
 	siemens_coefficient = 0.7
 	spawn_blacklisted = TRUE
-	style = STYLE_HIGH
+
 
 //Captain
 /obj/item/clothing/suit/storage/captain
@@ -122,7 +122,7 @@
 		rad = 0
 	)
 	price_tag = 5000
-	style = STYLE_HIGH
+
 
 //Chaplain
 /obj/item/clothing/suit/storage/neotheology_jacket
@@ -167,7 +167,6 @@
 	icon_state = "nt_sportsjacket"
 	item_state = "nt_sportsjacket"
 	body_parts_covered = UPPER_TORSO|ARMS
-	style_coverage = COVERS_CHEST|COVERS_UPPER_ARMS
 	spawn_blacklisted = TRUE
 	armor = list(
 		melee = 10,
@@ -185,7 +184,6 @@
 	icon_state = "nun"
 	item_state = "nun"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	style_coverage = COVERS_WHOLE_LEGS|COVERS_TORSO|COVERS_UPPER_ARMS
 	flags_inv = HIDESHOES|HIDEJUMPSUIT
 	spawn_blacklisted = TRUE
 
@@ -199,7 +197,7 @@
 	permeability_coefficient = 0.5
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS
-	style = STYLE_HIGH
+
 	spawn_blacklisted = TRUE
 
 //Chef
@@ -231,7 +229,7 @@
 	)
 	siemens_coefficient = 0.8
 	price_tag = 250
-	style = STYLE_HIGH
+
 
 /obj/item/clothing/suit/storage/detective/ironhammer
 	name = "Inspector's armored trenchcoat"

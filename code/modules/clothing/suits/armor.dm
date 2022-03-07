@@ -8,7 +8,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 	price_tag = 200
-	style = STYLE_NEG_HIGH
+	
 	style_coverage = COVERS_TORSO
 	equip_delay = 4 SECONDS
 	bad_type = /obj/item/clothing/suit/armor
@@ -355,7 +355,7 @@
 	siemens_coefficient = 0.5
 	item_flags = THICKMATERIAL|DRAG_AND_DROP_UNEQUIP|COVER_PREVENT_MANIPULATION|EQUIP_SOUNDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	style_coverage = COVERS_WHOLE_TORSO_AND_LIMBS
+	
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
@@ -369,7 +369,7 @@
 	)
 	equip_delay = 2 SECONDS
 	price_tag = 500
-	style = STYLE_NEG_HIGH
+	
 	slowdown = MEDIUM_SLOWDOWN
 	stiffness = MEDIUM_STIFFNESS
 
@@ -450,7 +450,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 	bad_type = /obj/item/clothing/suit/storage/vest
-	style = STYLE_NEG_HIGH
+	
 
 	matter = list(
 		MATERIAL_STEEL = 8,
@@ -612,7 +612,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
 	spawn_blacklisted = TRUE
-	style = STYLE_HIGH
+	
 	action_button_name = "Toggle Acceleration"
 	var/speed_boost_ready = TRUE
 	var/speed_boost_active = FALSE

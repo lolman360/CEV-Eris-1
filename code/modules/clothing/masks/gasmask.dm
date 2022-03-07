@@ -12,7 +12,7 @@
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
-	style_coverage = COVERS_WHOLE_FACE
+	
 	var/gas_filter_strength = 1			//For gas mask filters
 	var/list/filtered_gases = list("plasma", "sleeping_agent")
 	armor = list(
@@ -24,7 +24,7 @@
 		rad = 0
 	)
 	price_tag = 20
-	style = STYLE_NEG_LOW
+	
 	muffle_voice = TRUE
 
 /obj/item/clothing/mask/gas/filter_air(datum/gas_mixture/air)
@@ -51,7 +51,7 @@
 	icon_state = "plaguedoctor"
 	item_state = "gas_mask"
 	body_parts_covered = HEAD|FACE|EYES
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/mask/gas/swat
 	name = "\improper SWAT mask"
@@ -100,7 +100,7 @@
 	desc = "A true prankster's facial attire. A clown is incomplete without their wig and mask."
 	icon_state = "clown"
 	item_state = "clown_hat"
-	style = STYLE_NONE
+	
 	muffle_voice = FALSE
 
 /obj/item/clothing/mask/gas/clown_hat/attack_self(mob/user)
@@ -129,7 +129,7 @@
 	desc = "The traditional mime's mask. It has an eerie facial posture."
 	icon_state = "mime"
 	item_state = "mime"
-	style = STYLE_LOW
+	
 	muffle_voice = FALSE
 
 /obj/item/clothing/mask/gas/monkeymask
@@ -145,7 +145,7 @@
 	desc = "A traditional female mime's mask."
 	icon_state = "sexymime"
 	item_state = "sexymime"
-	style = STYLE_LOW
+	
 	muffle_voice = FALSE
 
 /obj/item/clothing/mask/gas/death_commando

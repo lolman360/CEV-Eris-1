@@ -81,7 +81,6 @@
 	var/embed_mult = 0.5 //Multiplier for the chance of embedding in mobs. Set to zero to completely disable embedding
 	var/structure_damage_factor = STRUCTURE_DAMAGE_NORMAL	//Multiplier applied to the damage when attacking structures and machinery
 	//Does not affect damage dealt to mobs
-	var/style = STYLE_NONE // how much using this item increases your style
 
 	var/list/item_upgrades = list()
 	var/max_upgrades = 3
@@ -444,10 +443,6 @@ var/global/list/items_blood_overlay_by_type = list()
 		else if (grabbed)
 			if (grabbed.stats.getPerk(PERK_ASS_OF_CONCRETE))
 				visible_message(SPAN_WARNING("[src] tries to pick up [grabbed], and fails!"))
-				if (ishuman(src))
-					var/mob/living/carbon/human/depleted = src
-					depleted.regen_slickness(-1) // unlucky and unobservant gets the penalty
-					return
 			else
 				visible_message(SPAN_WARNING("[src] picks up, spins, and drops [grabbed]."), SPAN_WARNING("You pick up, spin, and drop [grabbed]."))
 				grabbed.external_recoil(60)
@@ -467,9 +462,6 @@ var/global/list/items_blood_overlay_by_type = list()
 			unEquip(I)
 			return
 		I.hand_spin(src)
-	if (ishuman(src))
-		var/mob/living/carbon/human/stylish = src
-		stylish.regen_slickness()
 
 /obj/item/proc/hand_spin(mob/living/carbon/caller) // used for custom behaviour on the above proc
 	return
@@ -591,6 +583,3 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 /obj/item/proc/on_embed_removal(mob/living/user)
 	return
-
-/obj/item/proc/get_style()
-	return style

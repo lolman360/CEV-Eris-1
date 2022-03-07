@@ -4,7 +4,7 @@
 	icon_state = "eyepatch"
 	item_state = "eyepatch"
 	body_parts_covered = 0
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/glasses/monocle
 	name = "monocle"
@@ -12,7 +12,7 @@
 	icon_state = "monocle"
 	item_state = "headset" // lol
 	body_parts_covered = 0
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/glasses/regular
 	name = "Prescription Glasses"
@@ -71,8 +71,8 @@
 	icon_state = "sun"
 	item_state = "sunglasses"
 	darkness_view = -1
-	flash_protection = FLASH_PROTECTION_MINOR // does not "cover the whole eye socket", lets light leak.
-	style = STYLE_HIGH
+	flash_protection = FLASH_PROTECTION_MODERATE // does not "cover the whole eye socket", lets light leak.
+	
 
 /obj/item/clothing/glasses/sunglasses/blindfold
 	name = "blindfold"

@@ -21,7 +21,7 @@
 	item_flags = COVER_PREVENT_MANIPULATION
 	siemens_coefficient = 0.9
 	price_tag = 50
-	style = STYLE_NONE
+	
 
 /obj/item/clothing/suit/bio_suit
 	name = "bio suit"
@@ -48,7 +48,7 @@
 	flags_inv = HIDEGLOVES|HIDEJUMPSUIT|HIDETAIL
 	siemens_coefficient = 0.9
 	price_tag = 100
-	style = STYLE_NONE
+	
 
 //Plague Dr mask can be found in clothing/masks/gasmask.dm
 /obj/item/clothing/suit/bio_suit/plaguedoctorsuit

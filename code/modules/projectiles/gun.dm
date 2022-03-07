@@ -30,7 +30,6 @@
 
 	var/list/custom_default = list() // used to preserve changes to stats past refresh_upgrades proccing
 	var/damage_multiplier = 1 //Multiplies damage of projectiles fired from this gun
-	var/style_damage_multiplier = 1 // multiplies style damage of projectiles fired from this gun
 	var/penetration_multiplier = 1 //Multiplies armor penetration of projectiles fired from this gun
 	var/pierce_multiplier = 0 //Additing wall penetration to projectiles fired from this gun
 	var/ricochet_multiplier = 1 //multiplier for how much projectiles fired from this gun can ricochet, modified by the bullet blender weapon mod
@@ -504,7 +503,7 @@
 	offset = rand(-offset, offset)
 
 	return !P.launch_from_gun(target, user, src, target_zone, angle_offset = offset)
-	
+
 //Support proc for calculate_offset
 /obj/item/gun/proc/init_offset_with_brace()
 	var/offset = init_offset
@@ -906,4 +905,3 @@
 		init_offset -= scoped_offset_reduction
 	else
 		refresh_upgrades()
-

@@ -73,7 +73,7 @@
 		if(M.stat!=DEAD)
 			var/mob/living/carbon/C = M
 			var/safety = C.eyecheck()
-			var/flash_strength = 10 - (10*safety) // FLASH_PROTECTION_MINOR halves it, FLASH_PROTECTION_REDUCED doubles it.
+			var/flash_strength = 10 - (10*safety) // FLASH_PROTECTION_MODERATE halves it, FLASH_PROTECTION_REDUCED doubles it.
 			if(flash_strength > 0)
 				if(ishuman(M))
 					var/mob/living/carbon/human/H = M
@@ -180,7 +180,7 @@
 				var/mob/living/carbon/M = loc
 				var/safety = M.eyecheck()
 				if(safety < FLASH_PROTECTION_MODERATE)
-					M.Weaken(10-(10*safety)) // FLASH_PROTECTION_MINOR halves it, FLASH_PROTECTION_REDUCED doubles it.
+					M.Weaken(10-(10*safety)) // FLASH_PROTECTION_MODERATE halves it, FLASH_PROTECTION_REDUCED doubles it.
 					if (M.HUDtech.Find("flash"))
 						flick("e_flash", M.HUDtech["flash"])
 					for(var/mob/O in viewers(M, null))

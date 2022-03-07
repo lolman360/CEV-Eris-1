@@ -105,20 +105,20 @@
 	item_flags = NOSLIP
 	slowdown = SHOES_SLOWDOWN+1
 	species_restricted = null
-	style = STYLE_NEG_HIGH
+	
 
 /obj/item/clothing/shoes/leather
 	name = "leather shoes"
 	desc = "A sturdy pair of leather shoes."
 	icon_state = "leather"
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/shoes/redboot
 	name = "red boots"
 	desc = "A pair of stylish red boots."
 	icon_state = "redboots"
 	item_state = "redboots"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/shoes/jackboots/longboot
@@ -126,7 +126,7 @@
 	desc = "A pair of stylish vertically long boots."
 	icon_state = "longboots"
 	item_state = "longboots"
-	style = STYLE_HIGH
+	
 	price_tag = 400
 
 /obj/item/clothing/shoes/sneakerspurple

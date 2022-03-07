@@ -20,9 +20,6 @@
 	//Used for hardsuits. If false, this piece cannot be retracted while the core module is engaged
 	var/retract_while_active = TRUE
 
-	style = STYLE_NONE
-	var/style_coverage = NONE
-
 	var/light_overlay = "helmet_light"
 	var/light_applied
 	var/brightness_on
@@ -310,7 +307,7 @@ BLIND     // can't see anything
 	body_parts_covered = EYES
 	slot_flags = SLOT_EYES
 	bad_type = /obj/item/clothing/glasses
-	style = STYLE_LOW
+
 	var/vision_flags = 0
 	var/darkness_view = 0//Base human is 2
 	var/see_invisible = -1
@@ -331,7 +328,7 @@ BLIND     // can't see anything
 	armor = list(melee = 10, bullet = 0, energy = 15, bomb = 0, bio = 0, rad = 0)
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	style = STYLE_LOW
+
 	var/wired = 0
 	var/clipped = 0
 
@@ -368,7 +365,7 @@ BLIND     // can't see anything
 	w_class = ITEM_SIZE_SMALL
 	bad_type = /obj/item/clothing/head
 	spawn_tags = SPAWN_TAG_CLOTHING_HEAD
-	style = STYLE_HIGH
+
 
 /obj/item/clothing/head/attack_ai(mob/user)
 	if(!mob_wear_hat(user))
@@ -433,7 +430,7 @@ BLIND     // can't see anything
 	armor = list(melee = 10, bullet = 0, energy = 10, bomb = 0, bio = 0, rad = 0)
 	permeability_coefficient = 0.50
 	slowdown = SHOES_SLOWDOWN
-	style = STYLE_LOW
+
 	force = 2
 
 	var/can_hold_knife = 0
@@ -550,7 +547,6 @@ BLIND     // can't see anything
 	icon = 'icons/inventory/suit/icon.dmi'
 	name = "suit"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	style_coverage = COVERS_TORSO
 	allowed = list(
 		/obj/item/clipboard,
 		/obj/item/storage/pouch/,
@@ -581,7 +577,7 @@ BLIND     // can't see anything
 	bad_type = /obj/item/clothing/suit
 	var/fire_resist = T0C+100
 	var/list/extra_allowed = list()
-	style = STYLE_LOW
+
 	valid_accessory_slots = list("armor","armband","decor")
 	restricted_accessory_slots = list("armor","armband")
 

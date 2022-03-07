@@ -66,7 +66,7 @@
 	flags = null //doesn't protect eyes because it's a monocle, duh
 
 	body_parts_covered = 0
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/glasses/powered/thermal/plain/eyepatch
 	name = "Optical Thermal Eyepatch"
@@ -74,7 +74,7 @@
 	icon_state = "eyepatch"
 	item_state = "eyepatch"
 	body_parts_covered = 0
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/glasses/powered/thermal/plain/jensen
 	name = "Optical Thermal Implants"

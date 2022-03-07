@@ -16,14 +16,14 @@
 	desc = "A very smart uniform with a special pocket for tip."
 	icon_state = "waiter"
 	item_state = "waiter"
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/under/waiter/skirt
 	name = "waiter's skirtsuit"
 	desc = "A very smart uniform with a special pocket for tip and a skirt for female waiters."
 	icon_state = "waiter_skirt"
 	item_state = "waiter_skirt"
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/under/sexyclown
 	name = "sexy-clown suit"
@@ -58,7 +58,7 @@
 	desc = "A black suit and red tie. Very formal."
 	icon_state = "black_suit"
 	item_state = "bl_suit"
-	style = STYLE_LOW
+	
 
 
 /obj/item/clothing/under/suit_jacket/red
@@ -66,7 +66,7 @@
 	desc = "A red suit and blue tie. Somewhat formal."
 	icon_state = "red_suit"
 	item_state = "r_suit"
-	style = STYLE_LOW
+	
 
 
 /obj/item/clothing/under/blackskirt
@@ -76,7 +76,7 @@
 	item_state = "bl_suit"
 
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/under/schoolgirl
 	name = "schoolgirl uniform"
@@ -97,7 +97,7 @@
 	icon_state = "pirate"
 	//item_state = "sl_suit"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/under/soviet
 	name = "soviet uniform"
@@ -112,7 +112,7 @@
 	item_state = "kilt"
 
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/under/gladiator
 	name = "gladiator uniform"
@@ -128,7 +128,7 @@
 	icon_state = "bride_white"
 	item_state = "nursesuit"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	style = STYLE_LOW
+	
 
 
 /obj/item/clothing/under/captainformal
@@ -136,7 +136,7 @@
 	desc = "A captain's formal-wear, for special occasions."
 	icon_state = "captain_formal"
 	item_state = "b_suit"
-	style = STYLE_HIGH
+	
 
 
 /obj/item/clothing/under/assistantformal
@@ -144,7 +144,7 @@
 	desc = "An assistant's formal-wear. Why an assistant needs formal-wear is still unknown."
 	icon_state = "assistant_formal"
 	item_state = "gy_suit"
-	style = STYLE_HIGH
+	
 
 
 /obj/item/clothing/under/serviceoveralls
@@ -159,35 +159,35 @@
 	desc = "A bold but yet conservative outfit, red corduroys, navy blazer and a tie."
 	icon_state = "blue_blazer"
 	item_state = "blue_blazer"
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/under/dress/gray
 	name = "gray summerdress"
 	desc = "Gray summerdress only worn by the bravest individuals in the cold of space."
 	icon_state = "summerdress"
 	item_state = "summerdress"
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/under/dress/blue
 	name = "blue summerdress"
 	desc = "a blue dress worn by mostly those of east asian descendance"
 	icon_state = "summerdress2"
 	item_state = "summerdress2"
-	style = STYLE_LOW
+	
 
 /obj/item/clothing/under/dress/red
 	name = "red summerdress"
 	desc = "A red dress worn mostly by those of east asian descendance."
 	icon_state = "summerdress3"
 	item_state = "summerdress3"
-	style = STYLE_LOW
+	
 
 obj/item/clothing/under/leisure
 	name = "leisure outfit"
 	desc = "A leisure outfit with brown jacket. Sometimes you just want to wear what is comfortable."
 	icon_state = "leisureoutfit"
 	item_state = "leisureoutfit"
-	style = STYLE_LOW
+	
 
 obj/item/clothing/under/leisure/white
 	name = "white blouse"
@@ -242,7 +242,7 @@ obj/item/clothing/under/netrunner
 	desc = "Jumpsuit favored by surveillance officers and VR gamers alike. Ugly as sin. Luckily, in cyberspace no one can see your realspace clothing."
 	icon_state = "jensen"
 	item_state = "jensen"
-	style = STYLE_NEG_HIGH
+	
 
 obj/item/clothing/under/genericb
 	name = "blue generic outfit"
@@ -267,13 +267,13 @@ obj/item/clothing/under/genericr
 	desc = "Against the gnome there is no reception, if there is no other gnomes."
 	icon_state = "gnome"
 	item_state = "gnome"
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/under/tuxedo
 	name = "tuxedo"
 	desc = "A very stylish black tuxedo with a necktie. Must have for all crime-boys."
 	icon_state = "tuxedo"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 //stylish vendor clothes
@@ -282,7 +282,7 @@ obj/item/clothing/under/genericr
 	desc = "White suit, white pants and a white tie. Very stylish."
 	icon_state = "suit_white"
 	item_state = "suit_white"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/red
@@ -290,7 +290,7 @@ obj/item/clothing/under/genericr
 	desc = "Red suit, red pants and a red tie. Very stylish."
 	icon_state = "suit_red"
 	item_state = "suit_red"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/green
@@ -298,7 +298,7 @@ obj/item/clothing/under/genericr
 	desc = "Green suit, green pants and a green tie. Quite a riddle to solve."
 	icon_state = "riddler"
 	item_state = "riddler"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/grey
@@ -306,7 +306,7 @@ obj/item/clothing/under/genericr
 	desc = "Grey suit, grey pants and a grey tie. Very stylish."
 	icon_state = "suit_grey"
 	item_state = "suit_grey"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/black
@@ -314,7 +314,7 @@ obj/item/clothing/under/genericr
 	desc = "Black suit, black pants and a black tie. Very stylish."
 	icon_state = "suit_black"
 	item_state = "suit_black"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/dress/purple
@@ -322,7 +322,7 @@ obj/item/clothing/under/genericr
 	desc = "A black and purple dress, quite stylish"
 	icon_state = "black_purple"
 	item_state = "black_purple"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/dress/white
@@ -330,7 +330,7 @@ obj/item/clothing/under/genericr
 	desc = "A white and yellow dress, quite stylish"
 	icon_state = "white_yellow"
 	item_state = "white_yellow"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 
@@ -339,7 +339,7 @@ obj/item/clothing/under/genericr
 	desc = "A red shirt with a black tie and black pants. Stylish enough to impress the devil."
 	icon_state = "helltaker"
 	item_state = "helltaker"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/johnny
@@ -347,7 +347,7 @@ obj/item/clothing/under/genericr
 	desc = "A padded vest with brown leather pants. Never stop fightin'"
 	icon_state = "johnny"
 	item_state = "johnny"
-	style = STYLE_HIGH
+	
 	price_tag = 400
 	armor = list(
 		melee = 10,
@@ -363,7 +363,7 @@ obj/item/clothing/under/genericr
 	desc = "A classic style for hoodlums and bandits."
 	icon_state = "tracksuit"
 	item_state = "tracksuit"
-	style = STYLE_HIGH
+	
 	price_tag = 300
 
 /obj/item/clothing/under/raider
@@ -371,7 +371,7 @@ obj/item/clothing/under/genericr
 	desc = "A rather resistant, generic leather outfit. Smells like waste"
 	icon_state = "raider"
 	item_state = "raider"
-	style = STYLE_HIGH
+	
 	price_tag = 400
 	armor = list(
 		melee = 10,
@@ -387,28 +387,28 @@ obj/item/clothing/under/genericr
 	desc = "An Aster\'s Guild branded neosilk tropical shirt. This one makes you feel nostalgic."
 	icon_state = "3005vintage"
 	item_state = "3005vintage"
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/under/tropicalblue
 	name = "blue tropical shirt" 
 	desc = "An Aster\'s Guild branded neosilk tropical shirt. This one makes you feel out of touch."
 	icon_state = "miamivice"
 	item_state = "miamivice"
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/under/tropicalblack
 	name = "black tropical shirt"
 	desc = "An Aster\'s Guild branded neosilk tropical shirt. This one makes you feel like an animal."
 	icon_state = "animalstyle"
 	item_state = "animalstyle"
-	style = STYLE_HIGH
+	
 
 /obj/item/clothing/under/tropicalgreen
 	name = "puke-green tropical shirt"
 	desc = "An Aster\'s Guild branded neosilk tropical shirt. This one makes you look like puke."
 	icon_state = "tropicopuke"
 	item_state = "tropicopuke"
-	style = STYLE_HIGH
+	
 
 //Adminbus versions with extremly high armor, should never spawn in game
 /obj/item/clothing/under/tuxedo/adminspawn

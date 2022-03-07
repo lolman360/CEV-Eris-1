@@ -37,8 +37,8 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 	tint = TINT_MODERATE
 	obscuration = HEAVY_OBSCURATION
-	style = STYLE_NEG_LOW
-	style_coverage = COVERS_WHOLE_FACE
+	
+	
 	var/base_state
 
 /obj/item/clothing/head/welding/attack_self()
@@ -62,7 +62,7 @@
 			obscuration = initial(obscuration)
 			icon_state = base_state
 			to_chat(usr, "You flip the [src] down to protect your eyes.")
-			style_coverage = COVERS_WHOLE_FACE
+			
 		else
 			src.up = !src.up
 			body_parts_covered &= ~(EYES|FACE)
@@ -72,7 +72,7 @@
 			flags_inv &= ~(HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE)
 			icon_state = "[base_state]up"
 			to_chat(usr, "You push the [src] up out of your face.")
-			style_coverage = COVERS_HAIR
+			
 		if(ishuman(usr))
 			var/mob/living/carbon/human/beingofeyes = usr
 			beingofeyes.update_equipment_vision()
@@ -90,7 +90,7 @@
 	item_state = "cake0"
 	var/onfire = 0
 	body_parts_covered = HEAD
-	style_coverage = COVERS_HAIR
+	
 
 /obj/item/clothing/head/cakehat/Process()
 	if(!onfire)
@@ -130,7 +130,7 @@
 	desc = "Perfect for winter in Siberia, da?"
 	icon_state = "ushankadown"
 	flags_inv = HIDEEARS
-	style_coverage = COVERS_HAIR
+	
 
 /obj/item/clothing/head/ushanka/attack_self(mob/user)
 	if(src.icon_state == "ushankadown")
@@ -152,7 +152,7 @@
 	brightness_on = 2
 	light_overlay = "helmet_light"
 	w_class = ITEM_SIZE_NORMAL
-	style_coverage = COVERS_WHOLE_HEAD
+	
 
 
 
@@ -162,4 +162,4 @@
 	icon_state = "richard"
 	body_parts_covered = HEAD|FACE
 	flags_inv = BLOCKHAIR
-	style_coverage = COVERS_WHOLE_HEAD
+	

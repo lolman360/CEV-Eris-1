@@ -33,8 +33,8 @@
 	price_tag = 100
 	spawn_blacklisted = TRUE
 	bad_type = /obj/item/clothing/head/space
-	style = STYLE_NEG_HIGH
-	style_coverage = COVERS_WHOLE_HEAD
+	
+	
 
 	var/obj/machinery/camera/camera
 	var/list/camera_networks
@@ -97,8 +97,8 @@
 	species_restricted = list("exclude")
 	equip_delay = 6 SECONDS
 	bad_type = /obj/item/clothing/suit/space
-	style = STYLE_NEG_HIGH
-	style_coverage = COVERS_WHOLE_TORSO_AND_LIMBS
+	
+	
 	var/list/supporting_limbs //If not-null, automatically splints breaks. Checked when removing the suit.
 	slowdown = HEAVY_SLOWDOWN * 0.5
 	stiffness = HEAVY_STIFFNESS
