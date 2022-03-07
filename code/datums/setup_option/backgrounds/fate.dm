@@ -20,13 +20,13 @@
 	)
 	perks = list(PERK_PAPER_WORM)
 
-/datum/category_item/setup_option/background/fate/freelancer
-	name = "Freelancer"
+/datum/category_item/setup_option/background/fate/joat
+	name = "Jack of All Trades"
 	desc = "Whatever was your job, you never stayed in one place for too long or had lasting contracts. \
 			You were always on the move, looking for a brighter future on the other side. \
 			And because of that you never specialised as much as you should, but have broader array of other skills."
 
-	perks = list(PERK_FREELACER)
+	perks = list(PERK_JOAT)
 
 /datum/category_item/setup_option/background/fate/nihilist
 	name = "Nihilist"
@@ -67,7 +67,7 @@
 	desc = "You are a descendant of a long-lasting family, being part of a lineage of high status that can be traced back to the early civilization of your domain. \
 			What legacy will you build? \
 			Start with an heirloom weapon, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
-			
+
 	perks = list(PERK_NOBLE)
 
 /datum/category_item/setup_option/background/fate/rat

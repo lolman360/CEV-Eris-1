@@ -20,7 +20,7 @@
 	desc = "Whatever was your job, you never stayed in one place for too long or had lasting contracts. \
 			This perk checks your highest stat, lowers it by 10 and improves all others by 4."
 
-/datum/perk/fate/freelancer/assign(mob/living/carbon/human/H)
+/datum/perk/fate/joat/assign(mob/living/carbon/human/H)
 	..()
 	var/maxstat = -INFINITY
 	var/maxstatname

@@ -5,7 +5,7 @@
 	category_item_type = /datum/category_item/setup_option/background/origin
 
 /datum/category_item/setup_option/background/origin
-
+//most of these are still todo
 /datum/category_item/setup_option/background/origin/chinese_sub
 	name = "Chinese Remenant"
 	desc = "The People's Republic of China maintained a heavy submarine presence in the Pacific, even in the closing days of the Great War. \
@@ -13,17 +13,17 @@
 	The submarine remains operational, despite rarely leaving port, and most descendants of the crew are taught some basic skills regarding to crewing it. \
 	Gives you knowledge of the Chinese language."
 	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_BIO = -5,
+		STAT_ROB = -10,
+		STAT_TGH = -5,
+		STAT_BIO = 5,
 		STAT_MEC = 5,
-		STAT_VIG = 3,
-		STAT_COG = -3
+		STAT_VIG = 5,
+		STAT_COG = 5
 	)
 
 /datum/category_item/setup_option/background/origin/chinese_sub/apply(mob/living/carbon/human/character)
-  ..()
-  character.add_language(LANGUAGE_CHINESE)
+	..()
+	character.add_language(LANGUAGE_NEOHONGO) //todo
 
 
 /datum/category_item/setup_option/background/origin/placeholdervaulttown
@@ -32,12 +32,12 @@
 	While quite remote, the town is quite prosperous, bolstered by its strong production capabilities. \
 	It typically trades arms and ammunition to the local tribes and river caravans, and buys technologies from prospectors in the area."
 	stat_modifiers = list(
-		STAT_ROB = 2,
-		STAT_TGH = 6,
-		STAT_BIO = -6,
+		STAT_ROB = 0,
+		STAT_TGH = 5,
+		STAT_BIO = 0,
 		STAT_MEC = 0,
-		STAT_VIG = 0,
-		STAT_COG = -2
+		STAT_VIG = 5,
+		STAT_COG = -5
 	)
 
 
@@ -50,7 +50,7 @@
 		STAT_BIO = -5,
 		STAT_MEC = -5,
 		STAT_VIG = 0,
-		STAT_COG = -10
+		STAT_COG = -5
 	)
 
 
@@ -72,8 +72,8 @@
 	)
 
 /datum/category_item/setup_option/background/origin/new_rome/apply(mob/living/carbon/human/character)
-  ..()
-  character.add_language(LANGUAGE_LATIN)
+	  ..()
+	  character.add_language(LANGUAGE_LATIN)
 
 
 /datum/category_item/setup_option/background/origin/shimatengoku
@@ -94,8 +94,8 @@
 	)
 
 /datum/category_item/setup_option/background/origin/shimatengoku/apply(mob/living/carbon/human/character)
-  ..()
-  character.add_language(LANGUAGE_NEOHONGO)
+	  ..()
+	  character.add_language(LANGUAGE_NEOHONGO)
 
 
 /datum/category_item/setup_option/background/origin/hmss_destined
