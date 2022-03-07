@@ -146,7 +146,6 @@
 
 #define FLASH_PROTECTION_REDUCED -1
 #define FLASH_PROTECTION_NONE 0
-#define FLASH_PROTECTION_MINOR 0.5
 #define FLASH_PROTECTION_MODERATE 1
 #define FLASH_PROTECTION_MAJOR 2
 
@@ -221,4 +220,3 @@
 //Surgery operation defines
 #define CAN_OPERATE_ALL 1 //All possible surgery types are available
 #define CAN_OPERATE_STANDING -1 //Only limited surgery types are available (gouging out shrapnel, for instance)
-
