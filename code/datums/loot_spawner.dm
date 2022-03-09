@@ -244,7 +244,6 @@ the value of stock parts increases with the rating.
 					. += initial(F.initial_amount) * get_spawn_price(initial(F.spawn_type))
 		else if(ispath(path, /obj/item/clothing))
 			var/obj/item/clothing/C = path
-			. += 5 * initial(C.style)
 			. += 10 * (1 - initial(C.siemens_coefficient))
 			if(ispath(path, /obj/item/clothing/suit/space/void))
 				var/obj/item/clothing/suit/space/void/V = A

@@ -10,7 +10,7 @@
 	item_state = "ass_jacket"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS
+
 	armor = list(
 		melee = 10,
 		bullet = 10,
@@ -45,7 +45,7 @@
 	item_state = "cargo_jacket"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS
+
 	armor = list(
 		melee = 10,
 		bullet = 10,
@@ -111,7 +111,6 @@
 	item_state = "captain"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
 	spawn_blacklisted = TRUE
 	armor = list(
 		melee = 20,
@@ -132,7 +131,7 @@
 	item_state = "chaplain_hoodie"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS
+
 	spawn_blacklisted = TRUE
 	armor = list(
 		melee = 20,
@@ -149,7 +148,6 @@
 	icon_state = "church_coat"
 	item_state = "church_coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
 	spawn_blacklisted = TRUE
 	matter = list(MATERIAL_BIOMATTER = 20, MATERIAL_GOLD = 5)
 	armor = list(
@@ -196,8 +194,6 @@
 	gas_transfer_coefficient = 0.9
 	permeability_coefficient = 0.5
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS
-
 	spawn_blacklisted = TRUE
 
 //Chef
@@ -218,7 +214,6 @@
 	item_state = "det_suit"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
 	armor = list(
 		melee = 30,
 		bullet = 30,

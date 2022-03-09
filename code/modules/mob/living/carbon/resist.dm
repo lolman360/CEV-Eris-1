@@ -95,11 +95,6 @@
 			SPAN_DANGER("[src] rolls on the floor, trying to put themselves out!"),
 			SPAN_NOTICE("You stop, drop, and roll!")
 			)
-		if (ishuman(src))
-			var/mob/living/carbon/human/depleted = src
-			depleted.regen_slickness(-1)
-			depleted.confidence = FALSE
-			depleted.dodge_time = get_game_time()
 		sleep(30)
 		if(fire_stacks <= 0)
 			visible_message(
@@ -285,5 +280,3 @@
 			visible_message(SPAN_DANGER("\The [usr] manages to unbuckle themself!"),
 							SPAN_NOTICE("You successfully unbuckle yourself."))
 			buckled.user_unbuckle_mob(src)
-
-

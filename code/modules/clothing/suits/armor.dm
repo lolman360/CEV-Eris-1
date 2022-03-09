@@ -8,8 +8,6 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 	price_tag = 200
-	
-	style_coverage = COVERS_TORSO
 	equip_delay = 4 SECONDS
 	bad_type = /obj/item/clothing/suit/armor
 	spawn_tags = SPAWN_TAG_CLOTHING_ARMOR
@@ -53,7 +51,6 @@
 	)
 	slowdown = LIGHT_SLOWDOWN
 	stiffness = LIGHT_STIFFNESS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
 
 /obj/item/clothing/suit/armor/vest/full/security
 	name = "full security armor"
@@ -107,7 +104,6 @@
 	slowdown = LIGHT_SLOWDOWN
 	stiffness = LIGHT_STIFFNESS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS // kneepads and shoulderpads mean more covering
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
 
 /obj/item/clothing/suit/storage/greatcoat
 	item_flags = THICKMATERIAL|DRAG_AND_DROP_UNEQUIP
@@ -123,7 +119,6 @@
 	icon_state = "greatcoat"
 	item_state = "hos"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
 	armor = list(
 		melee = 30,
 		bullet = 40,
@@ -180,7 +175,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS // shoulderpads and kneepads
 	slowdown = LIGHT_SLOWDOWN
 	stiffness = LIGHT_STIFFNESS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
+
 
 /obj/item/clothing/suit/armor/flak/full/green
 	name = "full green flakvest vest"
@@ -218,7 +213,7 @@
 		MATERIAL_PLASTEEL = 3,
 	)
 	stiffness = MEDIUM_STIFFNESS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
+
 
 /obj/item/clothing/suit/armor/bulletproof/ironhammer
 	name = "full bulletproof suit"
@@ -267,7 +262,7 @@
 	icon_state = "platecarrier_fullbody"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	stiffness = MEDIUM_STIFFNESS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
+
 
 /obj/item/clothing/suit/armor/platecarrier/full/green
 	name = "full green platecarrier vest"
@@ -286,7 +281,7 @@
 	icon_state = "ablative"
 	item_state = "ablative"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
+
 	blood_overlay_type = "armor"
 	armor = list(
 		melee = 20,
@@ -355,7 +350,7 @@
 	siemens_coefficient = 0.5
 	item_flags = THICKMATERIAL|DRAG_AND_DROP_UNEQUIP|COVER_PREVENT_MANIPULATION|EQUIP_SOUNDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	
+
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
@@ -369,7 +364,7 @@
 	)
 	equip_delay = 2 SECONDS
 	price_tag = 500
-	
+
 	slowdown = MEDIUM_SLOWDOWN
 	stiffness = MEDIUM_STIFFNESS
 
@@ -441,7 +436,6 @@
 	)
 
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	style_coverage = COVERS_TORSO
 	item_flags = DRAG_AND_DROP_UNEQUIP|EQUIP_SOUNDS|THICKMATERIAL
 
 	cold_protection = UPPER_TORSO|LOWER_TORSO
@@ -450,7 +444,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 	bad_type = /obj/item/clothing/suit/storage/vest
-	
+
 
 	matter = list(
 		MATERIAL_STEEL = 8,
@@ -582,7 +576,7 @@
 		rad = 0
 	)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
+
 	unacidable = TRUE
 	spawn_blacklisted = TRUE
 	slowdown = 0 // Melee faction trades ranged accuracy for speed
@@ -610,9 +604,9 @@
 		rad = 50
 	)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	style_coverage = COVERS_TORSO|COVERS_UPPER_ARMS|COVERS_UPPER_LEGS
+
 	spawn_blacklisted = TRUE
-	
+
 	action_button_name = "Toggle Acceleration"
 	var/speed_boost_ready = TRUE
 	var/speed_boost_active = FALSE

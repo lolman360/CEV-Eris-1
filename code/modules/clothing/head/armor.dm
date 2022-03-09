@@ -64,7 +64,7 @@
 	flash_protection = FLASH_PROTECTION_MODERATE
 	price_tag = 500
 	obscuration = LIGHT_OBSCURATION
-	
+
 
 /obj/item/clothing/head/armor/helmet/dermal
 	name = "Dermal Armour Patch"
@@ -98,7 +98,7 @@
 	)//Mix between hardhat.dm armor values, helmet armor values in armor.dm, and armor values for TM void helmet in station.dm.
 	flash_protection = FLASH_PROTECTION_MAJOR
 	price_tag = 500
-	
+
 
 /obj/item/clothing/head/armor/helmet/technomancer/New()
 	. = ..()
@@ -169,7 +169,7 @@
 		MATERIAL_GLASS = 3 //For the visor parts
 	)
 	obscuration = LIGHT_OBSCURATION
-	
+
 
 /obj/item/clothing/head/armor/bulletproof/ironhammer_nvg //currently junk-only
 	name = "tactical ballistic helmet"
@@ -278,7 +278,7 @@
 		MATERIAL_PLASTEEL = 1,
 		MATERIAL_GLASS = 10 // glass is reflective yo, make it cost a lot of it - also, visor
 	)
-	
+
 
 // toggleable face guard
 /obj/item/clothing/head/armor/faceshield
@@ -333,7 +333,6 @@
 		obscuration = initial(obscuration)
 		flags_inv = initial(flags_inv)
 		body_parts_covered = initial(body_parts_covered)
-		style_coverage = initial(style_coverage)
 	else
 		armor = getArmor(arglist(armor_down))
 		flash_protection = flash_protection_down
@@ -341,7 +340,7 @@
 		obscuration = obscuration_down
 		flags_inv = flags_inv_down
 		body_parts_covered = body_parts_covered_down
-		
+
 
 	update_icon()
 	update_wear_icon()	//update our mob overlays
@@ -391,7 +390,7 @@
 	action_button_name = "Toggle Security Hud"
 	var/obj/item/clothing/glasses/hud/security/hud
 	price_tag = 500
-	
+
 
 /obj/item/clothing/head/armor/riot_hud/New()
 	..()
@@ -527,7 +526,7 @@
 	unacidable = TRUE
 	spawn_blacklisted = TRUE
 	obscuration = MEDIUM_OBSCURATION // May God guide your aim
-	
+
 
 /obj/item/clothing/head/armor/helmet/tanker
 	name = "black tanker helmet"

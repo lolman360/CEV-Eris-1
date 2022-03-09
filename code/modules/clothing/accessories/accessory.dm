@@ -218,7 +218,6 @@
 /obj/item/clothing/accessory/armor/on_attached()
 	..()
 	has_suit.armor = armor
-	has_suit.style -= 2
 	has_suit.slowdown = slowdown
 	has_suit.stiffness = stiffness
 	has_suit.body_parts_covered = UPPER_TORSO|LOWER_TORSO // Tears up the clothes

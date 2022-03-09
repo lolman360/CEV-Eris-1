@@ -460,7 +460,6 @@
 		return
 	initial_time = world.time
 	desc = "YOU\'RE THE BEST \[SALESMAN 2321\] AND IT SHOWS! YOU\'RE NOT IN THIS FOR \[THE FREE SPACEBUX\], YOU\'RE HERE FOR FOR \[[pick(list_of_great_deals)]\]"
-	my_mask.style = rand(-2, 2)//EXCLUSIVE OFFICIAL SPAMTON
 	var/KROMER_GOOD = TRUE
 	if(KROMER)
 		if(!charge_to_account(KROMER.account_number, KROMER.get_name(), "BIG SHOT", station_name(), rand(1, 4)))

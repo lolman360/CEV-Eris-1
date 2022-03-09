@@ -276,7 +276,6 @@
 				add_blood()
 		if(prob(60)) // I mean, the thing is ew gross.
 			equip_delay += rand(0, 6 SECONDS)
-		style += STYLE_NEG_LOW
 
 /obj/item/electronics/ai_module/broken
 	name = "\improper broken core AI module"

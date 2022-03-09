@@ -11,7 +11,6 @@
 	var/frequency = 1
 	hitscan = 1
 	invisibility = 101	//beam projectiles are invisible as they are rendered by the effect engine
-	style_damage = 30 //hitscan, light speed projectiles? Be glad its easier to dodge than a revolver.
 
 	muzzle_type = /obj/effect/projectile/laser/muzzle
 	tracer_type = /obj/effect/projectile/laser/tracer
@@ -64,7 +63,6 @@
 	icon_state = "heavylaser"
 	damage_types = list(BURN = 50)
 	armor_penetration = 20
-	style_damage = 60 //it's a slow firing beam weapon, this is probably fair.
 
 	muzzle_type = /obj/effect/projectile/laser_heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser_heavy/tracer
@@ -77,7 +75,6 @@
 	var/contractor = FALSE //Check if it's a contractor psychic beam
 	damage_types = list(PSY = 30)
 	armor_penetration = 100
-	style_damage = 60 //It's magic brain beams, deal with it.
 
 	muzzle_type = /obj/effect/projectile/psychic_laser_heavy/muzzle
 	tracer_type = /obj/effect/projectile/psychic_laser_heavy/tracer
@@ -191,7 +188,6 @@
 	damage_types = list(BURN = 60)
 	armor_penetration = 50
 	stutter = 3
-	style_damage = 70 //it's the laser AMR.
 
 	muzzle_type = /obj/effect/projectile/xray/muzzle
 	tracer_type = /obj/effect/projectile/xray/tracer
