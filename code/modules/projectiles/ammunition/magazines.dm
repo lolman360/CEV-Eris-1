@@ -1,135 +1,128 @@
 /////////////Standard/////////////
-/obj/item/ammo_magazine/pistol
-	name = "standard magazine (.35 Auto)"
+/obj/item/ammo_magazine/a9mm
+	name = "standard magazine (9mm)"
 	icon_state = "pistol"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PISTOL
 	matter = list(MATERIAL_STEEL = 3)
-	caliber = CAL_PISTOL
-	ammo_type = /obj/item/ammo_casing/pistol
+	caliber = CAL_9
+	ammo_type = /obj/item/ammo_casing/a9mm
 	max_ammo = 10
 	ammo_states = list(2, 4, 6, 8, 10)
 
-/obj/item/ammo_magazine/pistol/empty
+/obj/item/ammo_magazine/a9mm/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/pistol/practice
-	ammo_type = /obj/item/ammo_casing/pistol/practice
+/obj/item/ammo_magazine/a9mm/practice
+	ammo_type = /obj/item/ammo_casing/a9mm/practice
 	rarity_value = 5
 
-/obj/item/ammo_magazine/pistol/highvelocity
-	ammo_type = /obj/item/ammo_casing/pistol/hv
+/obj/item/ammo_magazine/a9mm/highvelocity
+	ammo_type = /obj/item/ammo_casing/a9mm/hv
 	rarity_value = 80
 
-/obj/item/ammo_magazine/pistol/rubber
-	ammo_type = /obj/item/ammo_casing/pistol/rubber
+/obj/item/ammo_magazine/a9mm/rubber
+	ammo_type = /obj/item/ammo_casing/a9mm/rubber
 	rarity_value = 5
 
-/obj/item/ammo_magazine/pistol/scrap
-	ammo_type = /obj/item/ammo_casing/pistol/scrap
+/obj/item/ammo_magazine/a9mm/scrap
+	ammo_type = /obj/item/ammo_casing/a9mm/scrap
 	rarity_value = 5
 	spawn_tags = SPAWN_AMMO_COMMON
 
 /////////////HighCap/////////////
-/obj/item/ammo_magazine/hpistol
-	name = "highcap magazine (.35 Auto)"
+/obj/item/ammo_magazine/a9mm/extended
+	name = "highcap magazine (9mm)"
 	icon_state = "hpistol"
 	origin_tech = list(TECH_COMBAT = 2)
-	mag_type = MAGAZINE
 	mag_well = MAG_WELL_H_PISTOL
 	matter = list(MATERIAL_STEEL = 3)
-	caliber = CAL_PISTOL
-	ammo_type = /obj/item/ammo_casing/pistol
+	caliber = CAL_9
+	ammo_type = /obj/item/ammo_casing/a9mm
 	max_ammo = 16
 	rarity_value = 20
 	ammo_states = list(2, 4, 6, 8, 10, 12, 14, 16)
 
-/obj/item/ammo_magazine/hpistol/empty
+/obj/item/ammo_magazine/a9mm/extended/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/hpistol/practice
-	ammo_type = /obj/item/ammo_casing/pistol/practice
+/obj/item/ammo_magazine/a9mm/extended/practice
+	ammo_type = /obj/item/ammo_casing/a9mm/practice
 	rarity_value = 10
 
-/obj/item/ammo_magazine/hpistol/highvelocity
-	ammo_type = /obj/item/ammo_casing/pistol/hv
+/obj/item/ammo_magazine/a9mm/extended/highvelocity
+	ammo_type = /obj/item/ammo_casing/a9mm/hv
 	rarity_value = 80
 
-/obj/item/ammo_magazine/hpistol/rubber
-	ammo_type = /obj/item/ammo_casing/pistol/rubber
+/obj/item/ammo_magazine/a9mm/extended/rubber
+	ammo_type = /obj/item/ammo_casing/a9mm/rubber
 	rarity_value = 10
 
-/////////////.35 SMG/////////////
+/////////////9mm SMG/////////////
 
-/obj/item/ammo_magazine/smg
-	name = "smg magazine (.35 Auto)"
+/obj/item/ammo_magazine/a9mm/smg
+	name = "smg magazine (9mm)"
 	icon_state = "smg"
 	origin_tech = list(TECH_COMBAT = 2)
-	mag_type = MAGAZINE
 	mag_well = MAG_WELL_SMG
 	matter = list(MATERIAL_STEEL = 4)
-	caliber = CAL_PISTOL
-	ammo_type = /obj/item/ammo_casing/pistol
 	max_ammo = 35
 	ammo_states = list(35)
 
-/obj/item/ammo_magazine/smg/empty
+/obj/item/ammo_magazine/a9mm/smg/empty
 	icon_state = "smg"
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/smg/practice
-	ammo_type = /obj/item/ammo_casing/pistol/practice
+/obj/item/ammo_magazine/a9mm/smg/practice
+	ammo_type = /obj/item/ammo_casing/a9mm/practice
 
-/obj/item/ammo_magazine/smg/hv
-	ammo_type = /obj/item/ammo_casing/pistol/hv
+/obj/item/ammo_magazine/a9mm/smg/hv
+	ammo_type = /obj/item/ammo_casing/a9mm/hv
 
-/obj/item/ammo_magazine/smg/rubber
-	ammo_type = /obj/item/ammo_casing/pistol/rubber
+/obj/item/ammo_magazine/a9mm/smg/rubber
+	ammo_type = /obj/item/ammo_casing/a9mm/rubber
 
-/obj/item/ammo_magazine/smg/scrap
-	ammo_type = /obj/item/ammo_casing/pistol/scrap
+/obj/item/ammo_magazine/a9mm/smg/scrap
+	ammo_type = /obj/item/ammo_casing/a9mm/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
 /////////////.40 SMG/////////////
 
-/obj/item/ammo_magazine/msmg
-	name = "smg magazine (.40 Magnum)"
+/obj/item/ammo_magazine/a10mm/smg
+	name = "smg magazine (10mm)"
 	icon_state = "msmg"
 	origin_tech = list(TECH_COMBAT = 2)
-	mag_type = MAGAZINE
 	mag_well = MAG_WELL_SMG
 	matter = list(MATERIAL_STEEL = 5)
-	caliber = CAL_MAGNUM
-	ammo_type = /obj/item/ammo_casing/magnum
 	max_ammo = 25
 	ammo_states = list(25)
 
-/obj/item/ammo_magazine/msmg/empty
+/obj/item/ammo_magazine/a10mm/smg/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/msmg/practice
-	ammo_type = /obj/item/ammo_casing/magnum/practice
+/obj/item/ammo_magazine/a10mm/smg/practice
+	ammo_type = /obj/item/ammo_casing/a10mm/practice
 
-/obj/item/ammo_magazine/msmg/hv
-	ammo_type = /obj/item/ammo_casing/magnum/hv
+/obj/item/ammo_magazine/a10mm/smg/hv
+	ammo_type = /obj/item/ammo_casing/a10mm/hv
 
-/obj/item/ammo_magazine/msmg/rubber
-	ammo_type = /obj/item/ammo_casing/magnum/rubber
+/obj/item/ammo_magazine/a10mm/smg/rubber
+	ammo_type = /obj/item/ammo_casing/a10mm/rubber
 
-/obj/item/ammo_magazine/msmg/scrap
-	ammo_type = /obj/item/ammo_casing/magnum/scrap
+/obj/item/ammo_magazine/a10mm/smg/scrap
+	ammo_type = /obj/item/ammo_casing/a10mm/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
 ///////////// .40 pistol ///////////
 
-/obj/item/ammo_magazine/magnum
+/obj/item/ammo_magazine/a10mm
 	name = "magazine (.40 Magnum)"
 	icon_state = "magnum"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PISTOL
 	ammo_mag = "mag_cl40m"
-	ammo_type = /obj/item/ammo_casing/magnum
+	ammo_type = /obj/item/ammo_casing/a10mm
 	matter = list(MATERIAL_STEEL = 4)
 	caliber = CAL_MAGNUM
 	max_ammo = 10
@@ -137,127 +130,123 @@
 	spawn_tags = SPAWN_TAG_AMMO_IH
 	ammo_states = list(2, 4, 6, 8, 10)
 
-/obj/item/ammo_magazine/magnum/empty
+/obj/item/ammo_magazine/a10mm/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/magnum/practice
-	ammo_type = /obj/item/ammo_casing/magnum/practice
-	spawn_tags = null
+/obj/item/ammo_magazine/a10mm/practice
+	ammo_type = /obj/item/ammo_casing/a10mm/practice
 
-/obj/item/ammo_magazine/magnum/hv
-	ammo_type = /obj/item/ammo_casing/magnum/hv
-	spawn_tags = null
+/obj/item/ammo_magazine/a10mm/hv
+	ammo_type = /obj/item/ammo_casing/a10mm/hv
 
-/obj/item/ammo_magazine/magnum/rubber
-	ammo_type = /obj/item/ammo_casing/magnum/rubber
-	rarity_value = 3
+/obj/item/ammo_magazine/a10mm/rubber
+	ammo_type = /obj/item/ammo_casing/a10mm/rubber
 
-/obj/item/ammo_magazine/magnum/scrap
-	ammo_type = /obj/item/ammo_casing/magnum/scrap
+/obj/item/ammo_magazine/a10mm/scrap
+	ammo_type = /obj/item/ammo_casing/a10mm/scrap
 	rarity_value = 3
 	spawn_tags = SPAWN_AMMO_COMMON
 
-///////////// .20 RIFLE /////////////
+///////////// 5.56mm /////////////
 
-/obj/item/ammo_magazine/srifle
-	name = "magazine (.20 Rifle)"
+/obj/item/ammo_magazine/a556
+	name = "magazine (5.56mm)"
 	icon_state = "srifle"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	caliber = CAL_SRIFLE
+	caliber = CAL_556
 	matter = list(MATERIAL_STEEL = 6)
-	ammo_type = /obj/item/ammo_casing/srifle
-	max_ammo = 25
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 30
 	ammo_states = list(25)
 
-/obj/item/ammo_magazine/srifle/empty
+/obj/item/ammo_magazine/a556/empty
 	icon_state = "srifle"
 	matter = list(MATERIAL_STEEL = 3)
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/srifle/practice
+/obj/item/ammo_magazine/a556/practice
 	icon_state = "srifle"
-	ammo_type = /obj/item/ammo_casing/srifle/practice
+	ammo_type = /obj/item/ammo_casing/a556/practice
 
-/obj/item/ammo_magazine/srifle/hv
+/obj/item/ammo_magazine/a556/hv
 	icon_state = "srifle"
-	ammo_type = /obj/item/ammo_casing/srifle/hv
+	ammo_type = /obj/item/ammo_casing/a556/hv
 
-/obj/item/ammo_magazine/srifle/rubber
+/obj/item/ammo_magazine/a556/rubber
 	icon_state = "srifle"
-	ammo_type = /obj/item/ammo_casing/srifle/rubber
+	ammo_type = /obj/item/ammo_casing/a556/rubber
 
-/obj/item/ammo_magazine/srifle/scrap
+/obj/item/ammo_magazine/a556/scrap
 	icon_state = "srifle"
-	ammo_type = /obj/item/ammo_casing/srifle/scrap
+	ammo_type = /obj/item/ammo_casing/a556/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
-////////// .20 LONG ///////////
+////////// 5.56mm LONG ///////////
 
-/obj/item/ammo_magazine/srifle/long
-	name = "extended magazine (.20 Rifle)"
-	desc = "Extended .20 caliber magazine, holds 35 rounds. Only fits \"Vintorez\" and \"Wintermute\" and \"Kalash\"."
+/obj/item/ammo_magazine/a556/long
+	name = "extended magazine (5.56mm)"
+	desc = "Extended 5.56mm caliber magazine, holds 40 rounds. Only fits \"Vintorez\" and \"Wintermute\" and \"Kalash\"."
 	icon_state = "srifle_long"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE_L
-	caliber = CAL_SRIFLE
+	caliber = CAL_556
 	matter = list(MATERIAL_STEEL = 9)
-	ammo_type = /obj/item/ammo_casing/srifle
-	max_ammo = 35
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 40
 	ammo_states = list(35)
 	rarity_value = 20
 
-/obj/item/ammo_magazine/srifle/long/empty
+/obj/item/ammo_magazine/a556/long/empty
 	matter = list(MATERIAL_STEEL = 3)
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/srifle/long/practice
-	ammo_type = /obj/item/ammo_casing/srifle/practice
+/obj/item/ammo_magazine/a556/long/practice
+	ammo_type = /obj/item/ammo_casing/a556/practice
 
-/obj/item/ammo_magazine/srifle/long/hv
-	ammo_type = /obj/item/ammo_casing/srifle/hv
+/obj/item/ammo_magazine/a556/long/hv
+	ammo_type = /obj/item/ammo_casing/a556/hv
 
-/obj/item/ammo_magazine/srifle/long/rubber
-	ammo_type = /obj/item/ammo_casing/srifle/rubber
+/obj/item/ammo_magazine/a556/long/rubber
+	ammo_type = /obj/item/ammo_casing/a556/rubber
 
-/obj/item/ammo_magazine/srifle/long/scrap
-	ammo_type = /obj/item/ammo_casing/srifle/scrap
+/obj/item/ammo_magazine/a556/long/scrap
+	ammo_type = /obj/item/ammo_casing/a556/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
-////////// .20 DRUM ///////////
+////////// 5.56mm DRUM ///////////
 
-/obj/item/ammo_magazine/srifle/drum
-	name = "drum magazine (.20 Rifle)"
-	desc = "Heavy .20 caliber magazine, holds 60 rounds. Only fits \"Kalash\"."
+/obj/item/ammo_magazine/a556/drum
+	name = "drum magazine (5.56mm)"
+	desc = "Heavy 5.56mm caliber magazine, holds 60 rounds. Only fits \"Kalash\"."
 	icon_state = "srifle_drum"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE_D
-	caliber = CAL_SRIFLE
+	caliber = CAL_556
 	matter = list(MATERIAL_STEEL = 18)
-	ammo_type = /obj/item/ammo_casing/srifle
+	ammo_type = /obj/item/ammo_casing/a556
 	max_ammo = 60
 	ammo_states = list(60)
 	w_class = ITEM_SIZE_NORMAL
-	spawn_blacklisted = TRUE // Not in use yet
 
-/obj/item/ammo_magazine/srifle/drum/empty
+/obj/item/ammo_magazine/a556/drum/empty
 	matter = list(MATERIAL_STEEL = 3)
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/srifle/drum/practice
-	ammo_type = /obj/item/ammo_casing/srifle/practice
+/obj/item/ammo_magazine/a556/drum/practice
+	ammo_type = /obj/item/ammo_casing/a556/practice
 
-/obj/item/ammo_magazine/srifle/drum/hv
-	ammo_type = /obj/item/ammo_casing/srifle/hv
+/obj/item/ammo_magazine/a556/drum/hv
+	ammo_type = /obj/item/ammo_casing/a556/hv
 
-/obj/item/ammo_magazine/srifle/drum/rubber
-	ammo_type = /obj/item/ammo_casing/srifle/rubber
+/obj/item/ammo_magazine/a556/drum/rubber
+	ammo_type = /obj/item/ammo_casing/a556/rubber
 
-/obj/item/ammo_magazine/srifle/drum/scrap
-	ammo_type = /obj/item/ammo_casing/srifle/scrap
+/obj/item/ammo_magazine/a556/drum/scrap
+	ammo_type = /obj/item/ammo_casing/a556/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
 ////////// .25 RIFLE ///////////
@@ -434,14 +423,14 @@
 
 ///////// SPEEDLOADERS ///////////
 
-//////// .35 SPEEDLOADERS //////////
+//////// 9mm SPEEDLOADERS //////////
 /obj/item/ammo_magazine/slpistol
-	name = "speed loader (.35 Auto)"
+	name = "speed loader (9mm)"
 	icon = 'icons/obj/ammo_speed.dmi'
 	icon_state = "slpistol"
-	caliber = CAL_PISTOL
+	caliber = CAL_9
 	matter = list(MATERIAL_STEEL = 3)
-	ammo_type = /obj/item/ammo_casing/pistol
+	ammo_type = /obj/item/ammo_casing/a9mm
 	max_ammo = 6
 	rarity_value = 6.66
 	ammo_states = list(1, 2, 3, 4, 5, 6)
@@ -450,18 +439,18 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/slpistol/practice
-	ammo_type = /obj/item/ammo_casing/pistol/practice
+	ammo_type = /obj/item/ammo_casing/a9mm/practice
 
 /obj/item/ammo_magazine/slpistol/hv
-	ammo_type = /obj/item/ammo_casing/pistol/hv
+	ammo_type = /obj/item/ammo_casing/a9mm/hv
 	rarity_value = 80
 
 /obj/item/ammo_magazine/slpistol/rubber
-	ammo_type = /obj/item/ammo_casing/pistol/rubber
+	ammo_type = /obj/item/ammo_casing/a9mm/rubber
 	rarity_value = 5
 
 /obj/item/ammo_magazine/slpistol/scrap
-	ammo_type = /obj/item/ammo_casing/pistol/scrap
+	ammo_type = /obj/item/ammo_casing/a9mm/scrap
 	rarity_value = 5
 	spawn_tags = SPAWN_AMMO_COMMON
 
@@ -513,15 +502,15 @@
 /obj/item/ammo_magazine/sllrifle/hv
 	ammo_type = /obj/item/ammo_casing/lrifle/hv
 
-//////// .20 RIFLE SPEEDLOADERS ////////
+//////// 5.56mm SPEEDLOADERS ////////
 
 /obj/item/ammo_magazine/slsrifle
-	name = "ammo strip (.20 Rifle)"
+	name = "ammo strip (5.56mm)"
 	icon = 'icons/obj/ammo_speed.dmi'
 	icon_state = "stripper_base"
-	caliber = CAL_SRIFLE
+	caliber = CAL_556
 	matter = list(MATERIAL_STEEL = 3)
-	ammo_type = /obj/item/ammo_casing/srifle
+	ammo_type = /obj/item/ammo_casing/a556
 	max_ammo = 5
 	w_class = ITEM_SIZE_TINY
 
@@ -537,16 +526,16 @@
 	update_icon()
 
 /obj/item/ammo_magazine/slsrifle/hv
-	ammo_type = /obj/item/ammo_casing/srifle/hv
+	ammo_type = /obj/item/ammo_casing/a556/hv
 
 /obj/item/ammo_magazine/slsrifle/practice
-	ammo_type = /obj/item/ammo_casing/srifle/practice
+	ammo_type = /obj/item/ammo_casing/a556/practice
 
 /obj/item/ammo_magazine/slsrifle/rubber
-	ammo_type = /obj/item/ammo_casing/srifle/rubber
+	ammo_type = /obj/item/ammo_casing/a556/rubber
 
 /obj/item/ammo_magazine/slsrifle/scrap
-	ammo_type = /obj/item/ammo_casing/srifle/scrap
+	ammo_type = /obj/item/ammo_casing/a556/scrap
 
 /// OTHER ///
 

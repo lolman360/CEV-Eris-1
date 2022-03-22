@@ -1,17 +1,15 @@
 //Caliber Defines
 #define CAL_357 ".357"
-#define CAL_CLRIFLE ".25 Caseless"
-#define CAL_SRIFLE ".20"
-#define CAL_PISTOL ".35"
-#define CAL_LRIFLE ".30"
-#define CAL_MAGNUM ".40 magnum"
-#define CAL_ANTIM ".60 Anti Material"
-#define CAL_SHOTGUN "Shotgun Shell"
-#define CAL_70 ".70"
+#define CAL_9 "9"
+#define CAL_44 ".44"
+#define CAL_10 "10"
+#define CAL_762 "7.62"
+#define CAL_556 "5.56"
+#define CAL_127 "12.7"
+#define CAL_SHOTGUN "18.5"
 #define CAL_CAP "plastic cap"
-#define CAL_ROCKET "rocket propelled grenade"
-#define CAL_DART "chemical dart"
-#define CAL_FLARE "flare shell"
+#define CAL_ROCKET "rpg"
+#define CAL_DART "dart"
 #define CAL_GRENADE "grenade"
 
 //Gun loading types
@@ -20,17 +18,11 @@
 #define MAGAZINE 		4	//The magazine item itself goes inside the gun
 
 #define MAG_WELL_GENERIC	0	//Undefined guns
-#define MAG_WELL_L_PISTOL	1	//Unused
-#define MAG_WELL_PISTOL		2   //.35 Pistols
-#define MAG_WELL_H_PISTOL	4	//.35 High cap Pistols
-#define MAG_WELL_SMG		8	//.35 smgs
-#define MAG_WELL_RIFLE		16	//.30 and .20 rifle mags
-#define MAG_WELL_IH			32	//.25 IH guns
-#define MAG_WELL_PAN		64	//.30 Lmgs with pan mags
-#define MAG_WELL_RIFLE_D	128	//.30 and .20 drum mags
-#define MAG_WELL_RIFLE_L	256 //.20 long rifle mags
-#define MAG_WELL_BOX		512	//.30 Lmgs with box mags
-#define MAG_WELL_DART		1024//Dartgun mag
+#define MAG_WELL_SHORT	1	//short mags
+#define MAG_WELL_NORMAL		2   //normal mags
+#define MAG_WELL_EXT	4	//extended mags
+#define MAG_WELL_DRUM	8	//drum mags
+
 
 #define SLOT_BARREL "barrel"
 #define SLOT_GRIP "grip"
