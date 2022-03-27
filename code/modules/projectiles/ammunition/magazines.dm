@@ -249,177 +249,101 @@
 	ammo_type = /obj/item/ammo_casing/a556/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
-////////// .25 RIFLE ///////////
+///////// 7.62mm ///////////
 
-/obj/item/ammo_magazine/c10x24
-	name = "box magazine (.25 caseless)"
-	icon_state = "10x24"
-	modular_sprites = FALSE
-	mag_type = MAGAZINE
-	mag_well = MAG_WELL_RIFLE
-	caliber = CAL_CLRIFLE
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 1)
-	ammo_type = /obj/item/ammo_casing/clrifle
-	max_ammo = 99
-	ammo_states = list(25, 50, 75, 99)
-
-/obj/item/ammo_magazine/ihclrifle
-	name = "magazine (.25 Caseless Rifle)"
-	icon_state = "ihclrifle"
-	mag_type = MAGAZINE
-	mag_well = MAG_WELL_IH
-	ammo_type = /obj/item/ammo_casing/clrifle
-	matter = list(MATERIAL_STEEL = 4)
-	caliber = CAL_CLRIFLE
-	max_ammo = 30
-	spawn_tags = SPAWN_TAG_AMMO_IH
-	rarity_value = 5
-	ammo_states = list(30)
-
-/obj/item/ammo_magazine/ihclrifle/empty
-	initial_ammo = 0
-
-/obj/item/ammo_magazine/ihclrifle/practice
-	ammo_type = /obj/item/ammo_casing/clrifle/practice
-	spawn_frequency = 5
-
-/obj/item/ammo_magazine/ihclrifle/hv
-	ammo_type = /obj/item/ammo_casing/clrifle/hv
-	spawn_tags = null
-
-/obj/item/ammo_magazine/ihclrifle/rubber
-	ammo_type = /obj/item/ammo_casing/clrifle/rubber
-
-/obj/item/ammo_magazine/ihclrifle/scrap
-	ammo_type = /obj/item/ammo_casing/clrifle/scrap
-	spawn_tags = SPAWN_AMMO_COMMON
-
-////////// .25 PISTOL //////////
-
-/obj/item/ammo_magazine/cspistol
-	name = "pistol magazine (.25 Caseless Rifle)"
-	icon_state = "cspistol"
-	mag_type = MAGAZINE
-	mag_well = MAG_WELL_PISTOL
-	ammo_type = /obj/item/ammo_casing/clrifle
-	matter = list(MATERIAL_STEEL = 4)
-	caliber = CAL_CLRIFLE
-	max_ammo = 10
-	ammo_states = list(2, 4, 6, 8, 10)
-
-/obj/item/ammo_magazine/cspistol/empty
-	initial_ammo = 0
-
-/obj/item/ammo_magazine/cspistol/practice
-	ammo_type = /obj/item/ammo_casing/clrifle/practice
-
-/obj/item/ammo_magazine/cspistol/hv
-	ammo_type = /obj/item/ammo_casing/clrifle/hv
-
-/obj/item/ammo_magazine/cspistol/rubber
-	ammo_type = /obj/item/ammo_casing/clrifle/rubber
-
-///////// .30 RIFLE ///////////
-
-/obj/item/ammo_magazine/lrifle
-	name = "long magazine (.30 Rifle)"
+/obj/item/ammo_magazine/a762
+	name = "long magazine (7.62mm)"
 	icon_state = "lrifle"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	caliber = CAL_LRIFLE
+	caliber = CAL_762
 	matter = list(MATERIAL_STEEL = 5)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 30
 	ammo_states = list(30)
 
-/obj/item/ammo_magazine/lrifle/empty
+/obj/item/ammo_magazine/a762/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/lrifle/practice
-	ammo_type = /obj/item/ammo_casing/lrifle/practice
+/obj/item/ammo_magazine/a762/practice
+	ammo_type = /obj/item/ammo_casing/a762/practice
 
-/obj/item/ammo_magazine/lrifle/highvelocity
-	ammo_type = /obj/item/ammo_casing/lrifle/hv
+/obj/item/ammo_magazine/a762/highvelocity
+	ammo_type = /obj/item/ammo_casing/a762/hv
 
-/obj/item/ammo_magazine/lrifle/rubber
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
+/obj/item/ammo_magazine/a762/rubber
+	ammo_type = /obj/item/ammo_casing/a762/rubber
 
-/obj/item/ammo_magazine/lrifle/scrap
-	ammo_type = /obj/item/ammo_casing/lrifle/scrap
+/obj/item/ammo_magazine/a762/scrap
+	ammo_type = /obj/item/ammo_casing/a762/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
-/obj/item/ammo_magazine/lrifle/pk
-	name = "LMG munitions box (.30 Rifle)"
+/obj/item/ammo_magazine/a762/pk
+	name = "LMG munitions box (7.62mm)"
 	icon_state = "pk_box"
 	modular_sprites = FALSE
 	origin_tech = list(TECH_COMBAT = 2)
-	mag_type = MAGAZINE
 	mag_well = MAG_WELL_BOX
-	caliber = CAL_LRIFLE
 	matter = list(MATERIAL_STEEL = 16)
-	ammo_type = /obj/item/ammo_casing/lrifle
 	max_ammo = 80
 	w_class = ITEM_SIZE_NORMAL
 	ammo_states = list(15, 30, 50, 79, 80)
 
-///////// .30 DRUM ///////////
+///////// 7.62mm DRUM ///////////
 
-/obj/item/ammo_magazine/lrifle/drum
-	name = "drum magazine (.30 Rifle)"
-	desc = "Heavy .30 caliber magazine, holds 45 rounds. Only fits \"Krinkov\" and \"Kalash\"."
+/obj/item/ammo_magazine/a762/drum
+	name = "drum magazine (7.62mm)"
+	desc = "Heavy 7.62x51mm caliber magazine, holds 45 rounds. Only fits \"Krinkov\" and \"Kalash\"."
 	icon_state = "lrifle_drum"
-	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE_D
-	caliber = CAL_LRIFLE
 	matter = list(MATERIAL_STEEL = 10)
-	ammo_type = /obj/item/ammo_casing/lrifle
 	max_ammo = 45
 	ammo_states = list(45)
 	w_class = ITEM_SIZE_NORMAL
 	rarity_value = 20
 
-/obj/item/ammo_magazine/lrifle/drum/empty
+/obj/item/ammo_magazine/a762/drum/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/lrifle/drum/practice
-	ammo_type = /obj/item/ammo_casing/lrifle/practice
+/obj/item/ammo_magazine/a762/drum/practice
+	ammo_type = /obj/item/ammo_casing/a762/practice
 
-/obj/item/ammo_magazine/lrifle/drum/highvelocity
-	ammo_type = /obj/item/ammo_casing/lrifle/hv
+/obj/item/ammo_magazine/a762/drum/highvelocity
+	ammo_type = /obj/item/ammo_casing/a762/hv
 
-/obj/item/ammo_magazine/lrifle/drum/rubber
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
+/obj/item/ammo_magazine/a762/drum/rubber
+	ammo_type = /obj/item/ammo_casing/a762/rubber
 
-/obj/item/ammo_magazine/lrifle/drum/scrap
-	ammo_type = /obj/item/ammo_casing/lrifle/scrap
+/obj/item/ammo_magazine/a762/drum/scrap
+	ammo_type = /obj/item/ammo_casing/a762/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
 //Magazine type for the mech PK, you shouldn't see this
 
-/obj/item/ammo_magazine/lrifle/pk/mech
-	name = "LMG munitions box (.30 Rifle, Exosuit)"
+/obj/item/ammo_magazine/a762/pk/mech
+	name = "LMG munitions box (7.62mm, Exosuit)"
 	matter = list()
 	spawn_blacklisted = TRUE
-	bad_type = /obj/item/ammo_magazine/lrifle/pk/mech
+	bad_type = /obj/item/ammo_magazine/a762/pk/mech
 
-/obj/item/ammo_magazine/lrifle/pk/empty
+/obj/item/ammo_magazine/a762/pk/empty
 	initial_ammo = 0
 
-///////// .30 MAXIM ///////////
+///////// 7.62mm MAXIM ///////////
 
 /obj/item/ammo_magazine/maxim
-	name = "pan magazine (.30 Rifle)"
+	name = "pan magazine (7.62mm)"
 	icon_state = "maxim"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PAN
-	caliber = CAL_LRIFLE
+	caliber = CAL_762
 	matter = list(MATERIAL_STEEL = 20)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 96
 	ammo_states = list(96)
 
 /obj/item/ammo_magazine/maxim/rubber
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
+	ammo_type = /obj/item/ammo_casing/a762/rubber
 
 ///////// SPEEDLOADERS ///////////
 
@@ -486,21 +410,21 @@
 	ammo_type = /obj/item/ammo_casing/magnum/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
-//////// .30 RIFLE SPEEDLOADERS ////////
+//////// 7.62mm SPEEDLOADERS ////////
 /obj/item/ammo_magazine/sllrifle
-	name = "ammo strip (.30 Rifle)"
+	name = "ammo strip (7.62mm)"
 	icon = 'icons/obj/ammo_speed.dmi'
 	icon_state = "lrifle"
 	modular_sprites = FALSE
-	caliber = CAL_LRIFLE
+	caliber = CAL_762
 	matter = list(MATERIAL_STEEL = 3)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 5
 	w_class = ITEM_SIZE_TINY
 	ammo_states = list(1, 2, 3, 4, 5)
 
 /obj/item/ammo_magazine/sllrifle/hv
-	ammo_type = /obj/item/ammo_casing/lrifle/hv
+	ammo_type = /obj/item/ammo_casing/a762/hv
 
 //////// 5.56mm SPEEDLOADERS ////////
 
@@ -569,12 +493,12 @@
 ////////////Shotguns!////////////
 
 /obj/item/ammo_magazine/m12
-	name = "ammo drum (.50)"
+	name = "ammo drum (12ga)"
 	icon_state = "m12"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_SHOTGUN
-	ammo_type = /obj/item/ammo_casing/shotgun
+	ammo_type = /obj/item/ammo_casing/a12
 	matter = list(MATERIAL_STEEL = 6)
 	max_ammo = 8
 	ammo_names = list(
